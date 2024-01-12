@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume| Sign In</title>
+    <link rel="shortcut icon" href="./img/svg/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="layer"></div>
+    <main class="page-center">
+        <article class="sign-up">
+            <h1 class="sign-up__title">Welcome to Resume!</h1>
+            <p class="sign-up__subtitle">Sign in to your account to continue</p>
+            <form class="sign-up-form form">
+                <p class="form-label back">Back</p>
+                <label class="form-label-wrapper">
+                  <p class="form-label">Email</p>
+                  <input class="form-input email" name="email" id="email" type="email" placeholder="Enter your email" required>
+                </label>
+                <label class="form-label-wrapper">
+                  <p class="form-label">password</p>
+                  <input class="form-input password" name="password" id="password" type="password" placeholder="Enter your password" required>
+                </label>
+                <a class="link-info forget-link" href="##">Forgot your password?</a>
+                <label class="form-checkbox-wrapper">
+                  <input class="form-checkbox" type="checkbox" required>
+                  <span class="form-checkbox-label">Remember me next time</span>
+                </label>
+                <label>
+                  <span class="login" id="error"></span>
+                </label>
+                <br>
+                <button class="submit-btn button primary-default-btn form-btn" type="button">Login</button>
+                <br>
+                <button class="form-btn button primary-default-btn register" type="button">Register</button>
+            </form>
+        </article>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/from.js"></script>
+    <script src="./plugins/chart.min.js"></script>
+    <script src="plugins/feather.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

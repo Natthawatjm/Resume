@@ -1,0 +1,415 @@
+/* RESET */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=El+Messiri:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  
+}
+a {
+  text-decoration: none;
+  /* color: #ffffff; */
+}
+
+
+
+/* CONTAINER */
+.containerss {
+  max-width: 550px;
+  margin: 50px 0 0 50px;
+}
+.containerss h1 {
+  color: #5512ff;
+  text-align: center;
+  text-transform: capitalize;
+}
+.containerss h1 span:first-child {
+  color: #ffa74a;
+}
+.containerss h1 span:last-child {
+  color: #42a3ff;
+}
+
+/* CARD */
+.containerss .card {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: #e1e4e6;
+  border: 3px solid #490606;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 10px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+#addCard {
+  border-style: dashed;
+}
+.containerss .card button {
+  border: none;
+  outline: none;
+  position: relative;
+  background-color: #42a3ff;
+  padding: 10px 60px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  transition: 0.3s;
+  box-shadow: 0px 5px 0px 0px #216aae;
+  cursor: pointer;
+}
+.containerss .card button:active {
+  box-shadow: 0px 0px 0px 0px #216aae;
+  transform: translateY(5px);
+}
+.containerss button#uploadAnother {
+  background-color: brown;
+  padding: 10px 30px;
+  box-shadow: 0px 5px 0px 0px rgb(102, 19, 19);
+}
+.containerss button#uploadAnother:active {
+  box-shadow: 0px 0px 0px 0px rgb(102, 19, 19);
+  transform: translateY(5px);
+}
+.containerss .card button input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  cursor: pointer;
+}
+.containerss .card p {
+  color: white;
+  font-size: 14px;
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 20px;
+}
+.containerss #displayCard img {
+  max-height: 100%;
+  width: auto;
+  border-radius: 5px;
+  z-index: 1;
+}
+.containerss .image-cont {
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 90%;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.containerss #downloadCard .image-cont {
+  padding: 0px;
+  width: fit-content;
+  background-image: url("https://thumbs.dreamstime.com/b/transparent-designer-must-have-fake-background-39672616.jpg");
+  background-size: contain;
+}
+.containerss #downloadCard .image-after {
+  max-height: 100%;
+  width: auto;
+  border-radius: 5px;
+  z-index: 1;
+}
+.containerss #downloadCard .image-before {
+  max-width: 20%;
+  height: auto;
+  border-radius: 5px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+/* LOADER */
+.loader {
+  --ballcolor: #f2f2f2;
+  --shadow: 0px 0 #ffffff00;
+  --shadowcolor: #ffffff00;
+  width: 10px;
+  height: 10px;
+  left: -120px;
+  border-radius: 50%;
+  position: relative;
+  color: var(--ballcolor);
+  animation: shadowRolling 2s linear infinite;
+}
+
+@keyframes shadowRolling {
+  0% {
+    box-shadow: var(--shadow), var(--shadow), var(--shadow), var(--shadow);
+  }
+
+  12% {
+    box-shadow: 100px 0 var(--ballcolor), var(--shadow), var(--shadow),
+      var(--shadow);
+  }
+
+  25% {
+    box-shadow: 110px 0 var(--ballcolor), 100px 0 var(--ballcolor),
+      var(--shadow), var(--shadow);
+  }
+
+  36% {
+    box-shadow: 120px 0 var(--ballcolor), 110px 0 var(--ballcolor),
+      100px 0 var(--ballcolor), var(--shadow);
+  }
+
+  50% {
+    box-shadow: 130px 0 var(--ballcolor), 120px 0 var(--ballcolor),
+      110px 0 var(--ballcolor), 100px 0 var(--ballcolor);
+  }
+
+  62% {
+    box-shadow: 200px 0 var(--shadowcolor), 130px 0 var(--ballcolor),
+      120px 0 var(--ballcolor), 110px 0 var(--ballcolor);
+  }
+
+  75% {
+    box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+      130px 0 var(--ballcolor), 120px 0 var(--ballcolor);
+  }
+
+  87% {
+    box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+      200px 0 var(--shadowcolor), 130px 0 var(--ballcolor);
+  }
+
+  100% {
+    box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+      200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor);
+  }
+}
+
+/* Code for JS */
+
+#addCard,
+#displayCard,
+#loadingCard,
+#downloadCard {
+  display: none;
+}
+
+.left {
+  width: 50%;
+  height: 100vh;
+  float: left;
+}
+
+.right {
+  width: 50%;
+  padding-right: 10px;
+  float: right;
+}
+/* img */
+
+:root {
+	--blue: #0071FF;
+	--light-blue: #B6DBF6;
+	--dark-blue: #005DD1;
+	--grey: #f2f2f2;
+}
+
+.containerr {
+    margin: 60px 0 140px 40px;
+}
+
+
+
+
+.containersss {
+	max-width: 340px;
+	width: 100%;
+	background: #fff;
+  margin: 10px;
+	padding: 30px;
+	border-radius: 30px;
+    
+}
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 372px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.img-area .icon {
+	font-size: 100px;
+}
+.img-area h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+.img-area p {
+	color: #999;
+}
+.img-area p span {
+	font-weight: 600;
+}
+.img-area img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 100;
+}
+.img-area::before {
+	content: attr(data-img);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: all .3s ease;
+	z-index: 200;
+}
+
+.select-image {
+	display: block;
+	width: 100%;
+	padding: 16px 0;
+	border-radius: 15px;
+	background: var(--blue);
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.select-image:hover {
+	background: var(--dark-blue);
+}
+
+.select {
+  display: block;
+	width: 100%;
+	padding: 16px 0;
+	border-radius: 15px;
+	background: rgb(210, 32, 32);
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+/* css color */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto:wght@400;500&display=swap');
+
+:root{
+    --main-color:#2980b9;
+}
+
+
+
+.img-area {
+  max-width: 340px;
+	width: 100%;
+  background: var(--main-color);
+	padding: 30px;
+	/* border-radius: 30px; */
+ 
+    /* min-height: 100vh;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px; */
+}
+
+.containersss h1 {
+    color: var(--main-color);
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    border-radius: 10px;
+    font-size: 6em;
+    padding: .5em .8em;
+}
+
+.color-switcher {
+    position: fixed;
+    top: 25px; right: -200px;
+    width: 200px;
+    padding: 10px;
+    background: #fff;
+    z-index: 1000;
+    margin-top: 60px;
+}
+
+.color-switcher.active {
+    right: 0px;
+}
+
+.color-switcher h3 {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.color-switcher .switcher-btn {
+    position: absolute;
+    top:0; left: -75px;
+    color: var(--main-color);
+    background: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.color-switcher .switcher-btn i {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.color-switcher .theme-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-switcher .theme-buttons-container .theme-buttons {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}

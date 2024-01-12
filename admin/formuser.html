@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./images/logos/logo.png" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <title>Resume Admin | Formsuser</title>
+</head>
+
+<body style="background-color: #212141;">
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed">
+        <!-- Sidebar Start -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div>
+                <div class="brand-logo d-flex align-items-center justify-content-between">
+                    <a href="/dashbord" class="text-nowrap logo-img">
+                        <img src="./images/logos/rsm.png" width="180" alt="" />
+                    </a>
+                    <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                        <i class="ti ti-x fs-8"></i>
+                    </div>
+                </div>
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                    <ul id="sidebarnav">
+                        <li class="nav-small-cap">
+                            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                            <span class="hide-menu">Home</span>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="/dashbord" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-file-description"></i>
+                                </span>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="/formsadmin" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-layout-dashboard"></i>
+                                </span>
+                                <span class="hide-menu">Forms</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="/formuser" aria-expanded="false">
+                              <span>
+                                <i class="ti ti-file-description"></i>
+                              </span>
+                              <span class="hide-menu">Forms User</span>
+                            </a>
+                          </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!--  Sidebar End -->
+        <!--  Main wrapper -->
+        <div class="body-wrapper">
+            <!--  Header Start -->
+            <header class="app-header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-block d-xl-none">
+                            <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse"
+                                href="javascript:void(0)">
+                                <i class="ti ti-menu-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+                        <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="" id="images" alt="image" width="50" height="50" class="rounded-circle">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up"
+                                    aria-labelledby="drop2">
+                                    <div class="message-body">
+                                        <a href="javascript:void(0)"
+                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            <i class="ti ti-user fs-6"></i>
+                                            <p class="mb-0 fs-3">My Profile</p>
+                                        </a>
+                                        <a href="javascript:void(0)"
+                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            <i class="ti ti-mail fs-6"></i>
+                                            <p class="mb-0 fs-3">My Account</p>
+                                        </a>
+                                        <a href="javascript:void(0)"
+                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            <i class="ti ti-list-check fs-6"></i>
+                                            <p class="mb-0 fs-3">My Task</p>
+                                        </a>
+                                        <a href="#" class="btn btn-outline-primary mx-3 mt-2 d-block"
+                                            id="logout">Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!--  Header End -->
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold mb-4">Forms User</h5>
+                            <div class="table-responsive">
+                                <table class="table text-nowrap mb-0 align-middle">
+                                    <thead class="text-dark fs-4">
+                                        <tr>
+                                            <th class="border-bottom-0">
+                                                <h6 class="fw-semibold mb-0">Id</h6>
+                                            </th>
+                                            <th class="border-bottom-0">
+                                                <h6 class="fw-semibold mb-0">Full Name</h6>
+                                            </th>
+                                            <th class="border-bottom-0">
+                                                <h6 class="fw-semibold mb-0">Name</h6>
+                                            </th>
+                                            <th class="border-bottom-0">
+                                                <h6 class="fw-semibold mb-0">Phone</h6>
+                                            </th>
+                                            <th class="border-bottom-0">
+                                                <h6 class="fw-semibold mb-0">Address</h6>
+                                            </th>
+                                            <th class="border-bottom-0">
+                                                <h6 class="fw-semibold mb-0">Email</h6>
+                                            </th>
+                                            <th class="border-bottom-0">
+                                                <h6 class="fw-semibold mb-0">Active</h6>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="memberusser">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="py-6 px-6 text-center">
+                <p class="mb-0 fs-4">Design and Developed by <a href="https://adminmart.com/" target="_blank"
+                        class="pe-1 text-primary text-decoration-underline">AdminMart.com</a> Distributed by <a
+                        href="https://themewagon.com">ThemeWagon</a></p>
+            </div>
+
+            <div id="modaledituser" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Edit User</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input id="txtaddmodalfnames" type="text" class="form-control" placeholder="Input Frist Name">
+                    </div>
+                    <div class="modal-body">
+                        <input id="txtaddmodallnames" type="text" class="form-control" placeholder="Input Last Name">
+                    </div>
+                    <div class="modal-body">
+                        <input id="txtaddmodalnames" type="text" class="form-control" placeholder="Input Name">
+                    </div>
+                    <div class="modal-body">
+                        <input id="txtaddmodalphones" type="text" class="form-control" placeholder="Input Phone">
+                    </div>
+                    <div class="modal-body">
+                        <input id="txtaddmodaladdresss" type="text" class="form-control" placeholder="Input Address">
+                    </div>
+                    <div class="modal-body">
+                        <input id="txtaddmodalemails" type="email" class="form-control" placeholder="Input Email">
+                    </div>
+                    <div class="modal-footer">
+                        <button id="closeaddmodal" type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                        <button onclick="updatemovie()" type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./libs/jquery/dist/jquery.min.js"></script>
+    <script src="./libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/sidebarmenu.js"></script>
+    <script src="./js/app.min.js"></script>
+    <script src="./libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="./libs/simplebar/dist/simplebar.js"></script>
+    <script src="./js/formadmin.js"></script>
+    <script>
+        var data;
+        var movieid = 0;
+        $(document).ready(() => {
+            renderuser();
+
+        })
+
+
+        function edituser(mid, index) {
+            $("#txtaddmodalfnames").val(data[index].fname)
+            $("#txtaddmodallnames").val(data[index].lname)
+            $("#txtaddmodalnames").val(data[index].name)
+            $("#txtaddmodalphones").val(data[index].phone)
+            $("#txtaddmodaladdresss").val(data[index].address)
+            $("#txtaddmodalemails").val(data[index].email)
+            movieid = mid;
+        }
+        function renderuser() {
+            //get
+            $.ajax({
+                method: 'get',
+                url: 'http://localhost:4200/api/getuser',
+                success: (response) => {
+                    console.log('User', response)
+                    if (response.RespCode == 200) {
+                        data = response.Result;
+                        if (data.length > 0) {
+                            var html = '';
+                            for (let i = 0; i < data.length; i++) {
+                                html += `
+                                    <tr>
+                                        <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0">${i + 1}</h6>
+                                        </td>
+                                        <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-1">${data[i].fname}</h6>
+                                        <span class="fw-normal">${data[i].lname}</span>
+                                        </td>
+                                        <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0 fs-4">${data[i].name}</h6>
+                                        </td>
+                                        <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0 fs-4">${data[i].phone}</h6>
+                                        </td>
+                                        <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0 fs-4">${data[i].address}</h6>
+                                        </td>
+                                        <td class="border-bottom-0">
+                                        <h6 class="fw-semibold mb-0 fs-4 badge bg-primary rounded-3 fw-semibold">${data[i].email}</h6>
+                                        </td>
+                                        <td>
+                                            <button onclick="edituser(${data[i].id}, ${i})"data-bs-toggle="modal" data-bs-target="#modaledituser"type="button" class="btn btn-warning">Edit</button>
+                                            <button onclick="deletemovie(${data[i].id}, ${i}, '${data[i].fname}')" type="button" class="btn btn-danger">Delete</button>
+                                        </td>
+                                    </tr>
+                                `;
+                            }
+                            $("#memberusser").html(html)
+                        }
+                    }
+                }, error: (err) => {
+                    console.log('bad', err)
+                }
+            })
+        }
+
+        //------------------------------------------------------------------
+        
+        function updatemovie() {
+            $.ajax({
+                method: 'put',
+                url: 'http://localhost:4200/api/updateuser',
+                data: {
+                    id: parseInt(movieid),
+                    fname: $('#txtaddmodalfnames').val(),
+                    lname: $('#txtaddmodallnames').val(),
+                    name: $('#txtaddmodalnames').val(),
+                    phone: $('#txtaddmodalphones').val(),
+                    address: $('#txtaddmodaladdresss').val(),
+                    email: $('#txtaddmodalemails').val(),
+                }, success: (response) => {
+                    console.log('good', response)
+                    if(response.RespCode == 200) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Update successfully'
+                        })
+                        $("#closeeditmodal").trigger('click')
+                        renderuser();
+                    }
+                }, error: (err) => {
+                    console.log('bad', err)
+                }
+            })
+        }
+
+        // function saveuser(){
+        //     $.ajax({
+        //         method: 'post',
+        //         url:'http://localhost:4200/api/createuser',
+        //         data: {
+        //             fname: $('#fname').val(),
+        //             lname: $('#lname').val(),
+        //             name: $('#name').val(),
+        //             password: $('#password').val(),
+        //             phone: $('#phone').val(),
+        //             address: $('#address').val(),
+        //             email: $('#email').val(),
+        //         },
+        //         success: (response ) =>{
+        //             console.log("Success", response)
+        //             if(response.RespCode == 200){
+        //                 Swal.fire({
+        //                     icon: 'Success',
+        //                     title: 'Add User Successfuly'
+        //                 })
+        //                 $("closeaddmodal").trigger('click');
+        //                 renderuser();
+        //             }
+        //         },error:(err) =>{
+        //             console.log('Bad',err)
+        //         }
+        //     })
+        // }
+
+        function deletemovie(mid, index, name) {
+            Swal.fire({
+                icon: "warning",
+                title: 'Are you sure to delete '+ name +'?',
+                showConfirmButton: false,
+                showDenyButton: true,
+                showCancelButton: true,
+                confirmButtonText: 'Save',
+                denyButtonText: `DELETE`,
+            }).then((result) => {
+                if (result.isDenied) {
+                    $.ajax({
+                        method: "delete",
+                        url: 'http://localhost:4200/api/deleteuser',
+                        data: {
+                            id: mid
+                        }, success: (response) => {
+                            console.log('good', response)
+                            if(response.RespCode == 200) {
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Delete successfully'
+                                })
+                                renderuser();
+                            }
+                        }, error: (err) => {
+                            console.log('bad', err)
+                        }
+                    })
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

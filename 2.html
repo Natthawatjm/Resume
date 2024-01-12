@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume Form</title>
+	<script>
+		function submitForm() {
+			// Get values from form
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var phone = document.getElementById("phone").value;
+			var experience = document.getElementById("experience").value;
+			var education = document.getElementById("education").value;
+
+			// Display values on resume
+			document.getElementById("nameLabel").innerHTML = name;
+			document.getElementById("emailLabel").innerHTML = email;
+			document.getElementById("phoneLabel").innerHTML = phone;
+			document.getElementById("experienceLabel").innerHTML = experience;
+			document.getElementById("educationLabel").innerHTML = education;
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"oninput="submitForm()"><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" oninput="submitForm()"><br>
+
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone"><br>
+
+		<label for="experience">Experience:</label>
+		<textarea id="experience" name="experience"></textarea><br>
+
+		<label for="education">Education:</label>
+		<textarea id="education" name="education"></textarea><br>
+
+		<button type="button" onclick="submitForm()">Submit</button>
+	</form>
+
+	<h2>Resume</h2>
+	<label>Name:</label><span id="nameLabel"></span><br>
+	<label>Email:</label><span id="emailLabel"></span><br>
+	<label>Phone:</label><span id="phoneLabel"></span><br>
+	<label>Experience:</label><span id="experienceLabel"></span><br>
+	<label>Education:</label><span id="educationLabel"></span><br>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,222 @@
+.left {
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    padding-right: 10px;
+    float: right;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    /*margin-left: 20%;*/
+}
+
+.clear {
+    clear: both;
+}
+
+#page-wrap {
+    width: 820px;
+    height: 350mm;
+    margin: 40px 40px 60px 40px;
+    padding:  0px 4px  ;
+    /*ลบออกได้ปรับรูปเข้ามาทางขวา*/
+    /* padding-right: 42px; */
+    box-shadow: inset 0 0 0 450px rgba(254, 217, 217, 0.5);
+}
+
+#pic {
+    width: 180px;
+    height: 220px;
+    float: right;
+    margin: 0 auto 0 0;
+}
+
+.fn  {
+    padding: 10px;
+}
+
+h1 {
+    margin: 0 0 16px 0;
+    padding: 0 0 16px 0;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #999;
+}
+
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 6px 0;
+    position: relative;
+}
+
+h2 span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-style: italic;
+    font-family: Georgia, Serif;
+    font-size: 16px;
+    color: rgb(184, 176, 176);
+    font-weight: normal;
+}
+
+p {
+    margin: 0 0 16px 0;
+}
+
+#objective {
+    width: 500px;
+    float: left;
+}
+
+#objective p {
+    font-family: Georgia, Serif;
+    font-style: italic;
+    color: #666;
+}
+
+dt {
+    font-style: Times New Roman, serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+
+    padding: 0 30px 0 0;
+    width: 150px;
+    float: left;
+    height: 150px;
+    border-right: 1px  solid #999;
+    color: tomato;
+    padding-left: 10px;
+  
+}
+
+dd {
+    width: 600px;
+    float: right;
+    padding-right: 111115px;  
+}
+
+dd.clear {
+    float: none;
+    margin: 0;
+    height: 15px;
+
+}
+
+
+.bg {
+    background-color: whitesmoke;
+}
+
+.bb,
+.bbb {
+    border: 3px solid rgb(136, 133, 133);
+    top: 70px;
+    right: 0px;
+}
+
+.list-unstyled li{
+    margin-left: 8px;
+}
+
+#contact-info {
+    margin-left: 8px;   
+}
+.contact-info {
+    margin-left: 8px;   
+}
+
+#contact-info h4 {
+    font-size: 30px;
+    font:  Helvetica;
+}
+
+b {
+    font-size: 18px;
+}
+
+li {
+  
+    margin-left: 8px;
+}
+
+.mb-3 ,.mb-1 ,.mb-2 {
+    font-size: 18px;
+}
+
+.block {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    background: linear-gradient(#f5837b, #FED9B7);
+    /*background-color: rgb(36, 45, 48);*/
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(241, 46, 46, 0.5);
+    padding: 20px;
+    font-size: 24px;
+    z-index: 500;
+}
+
+.aba, .abc, .abb, .abd, .abe, .abf {
+    /* border: 2px solid; */
+    border-radius: 12px;
+    padding: 15px;
+
+}
+
+.ff {
+    border-bottom: 1px solid rgb(164, 164, 164);
+}
+
+#btn-Preview-Image {
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    background-color: #b1aed8;
+    position: relative;
+}
+
+#btn-Convert-Html2Image {
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    position: relative;
+    background-color: #b1aed8;
+}
+
+#previewImage {
+    margin: 0;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+}
+
+.preview {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
